@@ -34,7 +34,7 @@ namespace PL
                         if (type == 1)
                         {
                             Supplier supplier = new Supplier()
-                            { SupplierName = "anjali", Address = "fvhj", ContactNo = "57868", Email="abc@gmail.com", CityOperatesIn="paris" };
+                            { SupplierName = "anjali", Address = "fvhj", ContactNo = "57868", Email="abc@gmail.com", cityOperation ="paris" };
 
 
                             bal.AddSupplier(supplier);
@@ -82,7 +82,7 @@ namespace PL
                             Console.WriteLine("Enter the supplier id you want to update for:");
                             int id = Convert.ToInt32(Console.ReadLine());
                             Supplier supplier = new Supplier()
-                            { SupplierName = "Rahul", Address = "kiran vihar", ContactNo = "5787868", Email="xyz@gmail.com", CityOperatesIn="london" };
+                            { SupplierName = "Rahul", Address = "kiran vihar", ContactNo = "5787868", Email="xyz@gmail.com", cityOperation ="london" };
 
                             bal.EditSupplier(id, supplier);
                         }
@@ -114,7 +114,7 @@ namespace PL
                             List<Supplier> list = bal.GetSuppliers();
                             foreach (Supplier supp in list)
                             {
-                                Console.WriteLine($"{supp.SupplierName} -- {supp.Address} -- {supp.ContactNo} -- {supp.Email} -- {supp.CityOperatesIn}");
+                                Console.WriteLine($"{supp.SupplierName} -- {supp.Address} -- {supp.ContactNo} -- {supp.Email} -- {supp.cityOperation}");
                             }
 
                         }

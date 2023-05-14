@@ -20,7 +20,7 @@ namespace DAL.Context
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(
-                @"data source=LAPTOP-NSEO6GV0;initial catalog=practiceDb;integrated security=true;
+                @"data source=DESKTOP-REN012L\SQLEXPRESS;initial catalog=empDb;integrated security=true;
 TrustServerCertificate=True");
         }
     }

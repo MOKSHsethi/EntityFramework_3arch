@@ -20,7 +20,7 @@ namespace BusinessObject.Models
 
         public string Email { get; set; }
 
-        public string CityOperatesIn { get; set; }
+        public string cityOperation { get; set; }
 
     }
 }

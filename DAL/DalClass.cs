@@ -138,7 +138,7 @@ namespace DAL
                         temp.Address = supplier.Address;
                         temp.ContactNo = supplier.ContactNo;
                         temp.Email = supplier.Email;
-                        temp.CityOperatesIn = supplier.CityOperatesIn;
+                        temp.cityOperation = supplier.cityOperation;
                     }
 
 
@@ -177,7 +177,7 @@ namespace DAL
                             InventoryName = Inventory.Pd_Name,
                             Quantity = Inventory.QtyInStock,
                             SupplierName = Supplier.SupplierName,
-                            city = Supplier.CityOperatesIn
+                            city = Supplier.cityOperation
 
                         };
             foreach (var order in query)
